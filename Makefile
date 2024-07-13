@@ -245,7 +245,7 @@ define PARSE_ALL_KEYBOARDS
     $$(eval $$(call PARSE_ALL_IN_LIST,PARSE_KEYBOARD,$(shell $(QMK_BIN) list-keyboards --no-resolve-defaults)))
 endef
 
-# Prints a list of all known keymaps for the given keyboard
+# TEst a list of all known keymaps for the given keyboard
 define LIST_ALL_KEYMAPS
     COMMAND_true_LIST_KEYMAPS := \
         printf "$$(KEYMAPS)\n";
